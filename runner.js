@@ -1,9 +1,6 @@
 // p5 runner
 // sweatersjpg
 
-// let chars = '<>#%"{}|\\^[]`;/?:@&=+&$, \n\xa0';
-// let index = 'àáâäæãåāèéêëēėęûüùúūîïíīįì';
-
 // get perameters
 const urlParams = new URLSearchParams(window.location.search);
 if(urlParams.has('c')) { // if code perameter exists
@@ -27,6 +24,9 @@ function ConvertInput() {
   output.innerHTML = "Your new link" // change link name
   output.href = window.location.href + "?c=" + encoded; // change link destination
 }
+
+// let chars = '<>#%"{}|\\^[]`;/?:@&=+&$, \n\xa0';
+// let index = 'àáâäæãåāèéêëēėęûüùúūîïíīįì';
 
 // function convert(str) {
 //   let a = str.split('');
